@@ -96,9 +96,13 @@ Finally, it is so fast i made a working font in 1 minute. it's that easy!
 here is some places you can find a font on:
 
 [The Google Fonts Store](https://fonts.google.com/)
+
 [Fontmeme.com (has fonts from various movies and games)](https://fontmeme.com/)
+
 [DaFont (has fonts from more games and more fonts then Fontmeme)](https://www.dafont.com/)
+
 [1001Fonts (best place to get fonts from my opinion)](https://www.1001fonts.com/)
+
 If you want to find more fonts, go to [Google.com](https://www.google.com/search?q=font) or [Bing.com](https://www.bing.com/search?q=font) for more font stores.
 
 Thank you for all of the support and usages.
