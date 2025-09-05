@@ -41,12 +41,22 @@ in the prompt, select the folder you've exported the files into, and locate the 
 
 double-click it, and check the ServerScriptService folder in your Studio Explorer. You'll find the ConvertedFont module.
 
-Rename it to whatever name you want, then parent it inside the Module.Files.
+Rename it to whatever name you want, then parent it inside the folder: [Module.Fonts].
+now, view the ConvertedFont module in the script editor, and change the imageId to the png's rbxassetid.
+if you didnt do that, here's how to do it:
+go to [The Decal uploading page](https://create.roblox.com/dashboard/creations/upload?assetType=Decal) and click the [Upload] button on the top.
+then, select your image file in the same folder as the FNT file.
+make sure to name it for example: ["My Custom Font Image"].
+when uploaded, now head to the bottom of the page and click the second [Upload] button.
+now, head to [The Decals tab](https://create.roblox.com/dashboard/creations?assetType=Decal&activeTab=Decal) and find the decal with the same name you've entered.
+when found, click the Three dots on the Top right corner of the icon, and click [Copy Asset id].
+now, head back to the ConvertedModule and make the [rbxassetid://1234567890] line this: rbxassetid://{your-copied-id-here}
+there you go, you've done it!
 
 this is how to use it: (localscript inside startergui)
 
 ```luau
-local fontName = "FontName" --  change this to your font's name
+local fontName = "FontName" --  change this to your font's name, depending on the name of your font module
 
 local FontGui = Instance.new("ScreenGui")
 FontGui.Name = "FontGui"
