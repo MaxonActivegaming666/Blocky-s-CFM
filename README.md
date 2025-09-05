@@ -2,6 +2,7 @@
 [My Plugin](https://create.roblox.com/store/asset/81948658764284)
 
 [BMFont Official Site](https://angelcode.com/products/bmfont/)
+[The Module (if you dont have it yet)](https://create.roblox.com/store/asset/81394450551935/Blockys-CFM)
 
 ## How to use
 First, Download BMFont from the link above.
