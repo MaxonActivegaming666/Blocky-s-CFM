@@ -56,7 +56,7 @@ there you go, you've done it!
 this is how to use it: (localscript inside startergui)
 
 ```luau
-local fontName = "FontName" --  change this to your font's name, depending on the name of your font module
+local fontName = "GeometryDash" --  change this to your font's name, depending on the name of your font module
 
 local FontGui = Instance.new("ScreenGui")
 FontGui.Name = "FontGui"
@@ -64,7 +64,7 @@ FontGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 FontGui.Parent = game:GetService("StarterGui")
 local module = require(game.ReplicatedStorage:WaitForChild("Blocky's CFM", 0.5))
 
-local container = Instance.new("TextBox")
+local Frame = Instance.new("TextBox")
 Frame.Name = "Frame"
 Frame.Active = false
 Frame.BorderSizePixel = 0
@@ -77,15 +77,15 @@ Frame.Selectable = false
 Frame.Position = UDim2.new(0.30, 0.00, 0.13, 0.00)
 Frame.Parent = FontGui
 
-module.RenderText("Enter Text Here", container, fontName, true)
-container:GetPropertyChangedSignal("Text"):Connect(function()
-	for _, image in pairs(container:GetChildren()) do
+module.RenderText("Enter Text Here", Frame, fontName, true)
+Frame:GetPropertyChangedSignal("Text"):Connect(function()
+	for _, image in pairs(Frame:GetChildren()) do
 		if image:IsA("ImageLabel") then
 			image:Destroy()
 		end
 	end
 
-	module.RenderText(container.Text, container, fontName, true)
+	module.RenderText(Frame.Text, Frame, fontName, true)
 end)
 
 
